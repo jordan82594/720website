@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href=
+    "https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+
+    
+body{
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.container2 {
+  border-radius: 0px;
+  background-color: #ffffff;
+  padding: px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: center;
+  
+  
+}
+
+.searchline {
+  border-radius: 0px;
+  background-color: #8f8f8f;
+  padding: 4px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: right;
+  
+  
+}
+
+information{ 
+    float: left;
+    padding: 20px;
+    width: 65%;
+    background-color: none;
+    
+}
+
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+picture{
+    float: left;
+    width: 35%;
+    background-color: none;
+    padding: 20px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.f1{
+    font-family: "Papyrus", fantasy;
+    font-size:60px;
+}
+
+.accordion {
+  background-color: rgba(253, 253, 253, 0.616);
+  color: #92bad1;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: center;
+  border: 1px solid #92bad1;
+  outline: 1px solid rgba(255, 255, 255, 0.979);
+  transition: 0.4s;
+   
+ 
+}
+
+.active, .accordion:hover {
+  background-color: rgb(204, 204, 204); 
+  
+  
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: rgba(255, 255, 255, 0.562);
+  overflow: hidden;
+}
+</style>
+<body>
+
+  <div class=searchline>
+    <form id="form" role="search">
+      <input type="search" id="query" name="q"
+       placeholder="Search..."
+       aria-label="Search through site content">
+      <button>Search</button>
+    </form>
+  </div>
+ 
+  <div class=container2>
+      
+    <img src="logo.png" alt="720 " style="width: 3.5%;max-height: 100%; float: right" /> 
+    <button class="button" onclick="window.location.href= 'index.html'">HOME</button>
+    <div class="dropdown">
+      <button class="button"onclick = "window.location.href= 'blog.html'">BLOG   </button>
+    <div class ="dropdown-content">
+      <a href="#">Tech Tuesday</a>
+      <a href="#"> Packers </a>
+      <a href="#"> Good To Know </a>
+    </div>
+    </div>
+    <button class="button" onclick="window.location.href= 'aquatics.html'">AQUATICS   </button>   
+    <button class="button"onclick="window.location.href= 'bio.html'">BIO/RESUME   </button>
+    <button class="button" onclick="window.location.href= 'contact.html'">    CONTACT  </button>
+    </div> 
+    <br>
+
+    <section>
+    <information>
+    <button class="accordion">BRIEF BACKGROUND</button>
+    <div class="panel">
+      <p>Louisiana kid....</p>
+    </div>
+    
+    <button class="accordion">EDUCATION</button>
+    <div class="panel">
+      <p>Computer Science 2021 UL Lafayette
+          Applied Sciences 2017 SLCC
+      </p>
+    </div>
+    
+    <button class="accordion">EMPLOYMENT</button>
+    <div class="panel">
+      <p>Mainly Retail with managerial experience and experience with technoloty and service</p>
+    </div> 
+    </information>
+    <picture>
+        <br>
+        <img src="packers.png" width="400" height="233">
+        <br>
+        <img src="ul1.png" width="400" height="233">
+    </picture>
+    </section>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+              panel.style.display = "none";
+            } else {
+              panel.style.display = "block";
+            }
+          });
+        }
+        </script>
+
+</body>  
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href=
+    "https://www.w3schools.com/w3css/4/w3.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+body {
+background-repeat: no-repeat;
+background-size: 150%;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #00a2ca94;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #02a5ce77;
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact {
+  border-radius: 10px;
+  background-color: #e2e2e2;
+  padding: 10px;
+  width: 60%;
+  height: 80%;
+  position: absolute;
+  left: 5%;
+  
+}
+
+.contact2 {
+  border-radius: 10px;
+  background-color: #e2e2e269;
+  padding: 10px;
+  width: 25%;
+  height: 40%;
+  position: absolute;
+  right: 5%;
+  text-align: center;
+  font-size: 13px;
+}
+
+.searchline {
+  border-radius: 0px;
+  background-color: #8f8f8f;
+  padding: 4px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: right;
+  
+  
+}
+.container2 {
+  border-radius: 0px;
+  background-color: #ffffff;
+  padding: px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: center;
+ 
+
+  
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+
+
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button2 {
+  background-image: url(logo.png);
+  width: 10%;
+  height: 10%; 
+  
+  
+  
+}
+
+
+.f1{
+    font-family: "Papyrus", fantasy;
+    font-size:60px;
+}
+.topnav-right {
+  float: right;
+}
+
+h2{
+  text-align:right;
+}
+
+.head{
+  padding: 60px;
+  text-align: right;
+  color: white;
+  background-color: white;
+  height: 100px;
+}
+
+
+h3{
+  text-align: center;
+  font-size: 30px;
+  
+}
+
+</style>
+<body>
+
+  <div class=searchline>
+    <form id="form" role="search">
+      <input type="search" id="query" name="q"
+       placeholder="Search..."
+       aria-label="Search through site content">
+      <button>Search</button>
+    </form>
+  </div>
+   
+  <div class=container2>
+    <img src="logo.png" alt=" " style="width: 3.5%;max-height: 100%; float:right" /> 
+    <button class="button" onclick="window.location.href= 'index.html'">HOME</button>
+    <div class="dropdown">
+      <button class="button"onclick = "window.location.href= 'blog.html'">BLOG   </button>
+    <div class ="dropdown-content">
+      <a href="#">Tech Tuesday</a>
+      <a href="#"> Packers </a>
+      <a href="#"> Good To Know </a>
+    </div>
+    </div>
+    <button class="button" onclick="window.location.href= 'aquatics.html'">AQUATICS   </button>
+    <button class="button" onclick="window.location.href= 'bio.html'">BIO/RESUME   </button>
+    <button class="button" onclick="window.location.href= 'contact.html'">    CONTACT  </button>
+
+  </div>
+   <br>
+
+  <div class="contact">
+      <h3>Contact</h3>
+      <form target="_blank" action="https://formsubmit.co/bigjoe82594@yahoo.com" method="POST">
+        <input type="hidden" name="_next" value="contact.html">
+        
+            <div>
+              <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+            </div>
+            <div>
+              <input type="text" name="email" class="form-control" placeholder="Email Address" required>
+            </div>
+          <div>
+        <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required>
+        </textarea>
+        </div>
+        <div>
+        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+      </div>
+      </form>
+    </div>
+
+    <div class="contact2">
+      <h3>Contact Info </h3>
+      <br>
+      Email: jordanjwilliams825@gmail.com
+      <br><br>
+      Freelancer link: https://www.freelancer.com/u/Jordan82594
+      <br><br>
+      UpWork link: https://www.upwork.com/freelancers/~0188a4c8c25678f268
+    </div>
+
+    
+ 
+
+
+
+
+
+
+</body>  
+</html>
