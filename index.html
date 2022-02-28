@@ -44,19 +44,33 @@ body{
   margin-left: auto;
   margin-right: auto; 
   text-align: center;
-  
+  box-shadow: 0px 0px 8px #888888;
   
 }
 
 .slidercon {
   border-radius: 10px;
-  background-color: #e2e2e2;
+  background-color: #ffffff;
   padding: 10px;
   width: 60%;
   height: 80%;
   position: absolute;
   left: 5%;
   top: 15%;
+  box-shadow: 0px 0px 10px #888888;
+
+}
+
+.infocon {
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 10px;
+  width: 30%;
+  height: 60%;
+  position: absolute;
+  right: 3%;
+  top: 15%;
+  box-shadow: 0px 0px 10px #888888;
 
 }
 
@@ -124,6 +138,15 @@ img {
   cursor: pointer;
 }
 
+.button1{
+  
+
+}
+
+.button2{
+
+}
+
  
  
 
@@ -150,6 +173,7 @@ img {
     </div>
     </div>
     <button class="button" onclick="window.location.href= 'aquatics.html'">AQUATICS   </button>
+    <button class="button" onclick="window.location.href= 'realestate.html'">REAL ESTATE   </button>
     <button class="button" onclick="window.location.href= 'bio.html'">BIO/RESUME   </button>
     <button class="button" onclick="window.location.href= 'contact.html'">    CONTACT  </button>
     
@@ -200,9 +224,55 @@ img {
      
     </div>
 
-    
+    <div class=infocon>
+      <div class=container2>
+        <button onclick="changecolor()" class="button button1">Selection1</button>
+        <button onclick="changecolor1()" class="button button2">Selection2</button>
+
+      </div>
+      
+    </div>
  
+  
+
 
 </body>  
 </html>
 
+<script>
+  const button1 = document.querySelector(".button1");
+  const button2 = document.querySelector(".button2");
+function changecolor(){
+
+  if(button2.style.color= "gray"){
+  button1.style.color = "gray";
+  button2.style.color= "black";
+}
+  else if (button1.style.color= "gray"){
+    button1.style.color="gray";
+    button2.style.color="black";
+
+  }
+  else {
+    button1.style.color="gray;"
+  }
+}
+
+function changecolor1(){
+
+  if(button1.style.color= "gray"){
+  button1.style.color = "black";
+  button2.style.color= "gray";
+}
+  else if (button2.style.color= "gray"){
+    button1.style.color="black";
+    button2.style.color="gray";
+
+  }
+  else {
+    button2.style.color="gray;"
+  }
+}
+
+
+</script>
